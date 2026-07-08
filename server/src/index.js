@@ -15,6 +15,7 @@ const { autoSetup } = require('./setup');
   }
 
 const app = express();
+app.set('trust proxy', 1);
 const PORT = process.env.PORT || 3000;
 
 console.log('[Boot] Starting AI Chatbot Server...');
